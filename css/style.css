@@ -1,0 +1,144 @@
+body {
+  background-color: rgb(187, 127, 243);
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content {
+  margin: 100px auto 100px;
+}
+
+.content .container {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #583ca5;
+  color: #ffffff;
+  border-radius: 10px 0 0 10px;
+}
+.info-section img {
+  margin: 0 auto;
+}
+
+.info-section p {
+  text-align: center;
+}
+
+.info-section__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .content {
+    margin: 20px auto 20px;
+  }
+
+  .info-section {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .info-section img {
+    margin-top: 30px;
+  }
+}
+
+.review-section {
+  padding: 30px 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__comment label {
+  width: 100%;
+}
+
+.form__comment textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  height: 131px;
+  width: 100%;
+  resize: none;
+}
+
+.rating__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.rating__item input {
+  display: none;
+}
+
+.rating__item input+label {
+  border: 1px solid #ef423d;
+  color: #ef423d;
+  font-weight: 700;
+  border-radius: 50%;
+  transition: .3s;
+  width: 27px;
+  height: 27px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.rating__item input:checked+label {
+  background: #ef423d;
+  color: #fff;
+}
+
+.rating__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__phone input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px;
+  padding-left: 10px;
+  height: 40px;
+}
+
+.form__photo label {
+  cursor: pointer;
+}
+
+.form__photo input {
+  display: none;
+}
+
+.form__button {
+  width: 187px;
+  height: 55px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .4s ease;
+  background-color: #ef423d;
+}
